@@ -1,0 +1,845 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div.top {
+    /* border: 1px solid black; */
+    position: fixed;
+    height: 5.313rem;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.logo {
+    /* display: block;
+    margin-right: auto;
+    margin-left: auto; */
+    position: fixed;
+    top: 0.688rem;
+    left: 2.813rem;
+    height: 3.75rem;
+    width: 6.25rem;
+    color: white;
+    /* background-color: #fff; */
+    z-index: 2;
+    background: white;
+}
+
+.navbar {
+    position: fixed;
+    right: 2.75rem;
+    top: 2rem;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.navbar2 {
+    position: fixed;
+    top: 2rem;
+    left: 11rem;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.navbar li, .navbar2 li {
+    float: left;
+    list-style-type: none;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.navbar li a {
+    text-decoration: none;
+    padding: 0.625rem 0.25rem;
+    /* font-weight: bold; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.875rem;
+    color: black;
+    background-color: #fff;
+}
+
+.navbar2 li a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: grey;
+    padding: 1.938rem;
+
+}
+
+.navbar2 li a:hover {
+    color: black;
+}
+
+.btn2 {
+    color: black;
+    background-color: rgb(255, 202, 30);
+    /*border: 0.063rem solid white;
+    */padding: 0.938rem 1.875rem;
+    border-radius: 0.625rem;
+    margin-left: 30px;
+}
+
+.btn2:hover {
+    background-color: rgb(247, 206, 71);
+}
+
+.getBetter {
+    position: absolute;
+    top: 9.375rem;
+    left: 2.5rem;
+}
+
+.getBetter h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.938rem;
+    font-weight: bold;
+    color: rgb(36, 35, 33);
+}
+
+.getBetterBtn {
+    color: rgb(36, 35, 33);
+    background-color: rgb(255, 202, 30);
+    padding: 1.188rem 2.438rem;
+    border-radius: 0.625rem;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.938rem;
+    font-weight: bold;
+    margin-top: 2.5rem;
+}
+
+.getBetterBtn:hover {
+    background-color: rgb(247, 206, 71);
+}
+
+.getBetterBtn2 {
+    color: rgb(36, 35, 33);
+    background-color: white;
+    padding: 0.938rem 1.875rem;
+    border-radius: 0.625rem;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.875rem;
+    font-size: 0.938rem;
+    font-weight: bold;
+    margin-top: 2.5rem;
+}
+
+.btn2Arr {
+    color: rgb(255, 202, 30);
+    margin-left: 1.25rem;
+}
+
+.trusted {
+    position: absolute;
+    top: 9.938rem;
+    right: 6.75rem;
+    width: 28.5rem;
+}
+
+.trusted p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 2.5rem;
+}
+
+.partners {
+    position: absolute;
+    background: url("/images/Screenshot\ 2024-02-27\ at\ 02-51-42\ Get\ Better\ at\ Business\ with\ Nomba.png")no-repeat center center/cover;
+    height: 37.5rem;
+    width: 99%;
+    top: 28.125rem;
+}
+
+.newPromo {
+    position: absolute;
+    top: 71.875rem;
+    left: 21.875rem;
+    text-align: center;
+}
+
+.promoBtn {
+    padding: 0.625rem 1.25rem;
+    background-color: rgb(255, 202, 30);
+    border-radius: 3.125rem;
+    border: 0.063rem solid yellow;
+    outline: 0.063rem dashed rgb(255, 202, 30);
+    outline-offset: 0.313rem;
+    font-size: 0.938rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.313rem;
+    margin-bottom: 1.25rem;
+}
+
+.newPromo h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.125rem;
+    margin-bottom: 1.25rem;
+}
+
+.newPromo p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+}
+
+.lmoreBtn {
+    color: rgb(36, 35, 33);
+    background-color: rgb(255, 202, 30);
+    padding: 1.188rem 6.25rem;
+    border-radius: 0.625rem;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.938rem;
+    font-weight: bold;
+    margin-top: 2.5rem;
+}
+
+.lmoreBtn:hover {
+    background-color: rgb(247, 206, 71);
+}
+
+.maximize {
+    position: absolute;
+    top: 115.625rem;
+    left: 2.25rem;
+}
+
+.maximize h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.625rem;
+}
+
+.maximize button {
+    margin-top: 1.25rem;
+    padding: 0.625rem 1rem;
+    border-radius: 3.125rem;
+    border: 0.063rem solid grey;
+    font-size: 1.875rem;
+    color: grey;
+    background-color: white;
+}
+
+.maximize button:hover {
+    background-color: rgb(248, 240, 242);
+}
+
+.maxBtn1 {
+    margin-right: 1.25rem;
+}
+
+.maxGallery {
+    position: absolute;
+    top: 131.25rem;
+    left: 2.5rem;
+    float: left;
+}
+
+.menu, .invoicing, .inventory {
+    border: 0.188rem solid rgb(240, 233, 233);
+    border-radius: 0.625rem;
+    height: 32.25rem;
+}
+
+.invoicing {
+    position: absolute;
+    top: 0rem;
+    left: 33.063rem;
+}
+
+.menu h1, .invoicing h1, .inventory h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1.25rem;
+    margin-left: 1.875rem;
+}
+
+.menu p, .invoicing p, .inventory p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.938rem;
+    margin-top: 0.625rem;
+    margin-left: 1.875rem;
+    margin-bottom: 1.188rem;
+    color: rgb(80, 77, 77);
+    line-height: 1.875rem;
+}
+
+.menu a, .invoicing a, .inventory a {
+    margin-top: 1.875rem;
+    margin-left: 1.875rem;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inventory {
+    position: absolute;
+    top: 0rem;
+    left: 65.625rem;
+}
+
+.menu img, .invoicing img, .inventory img {
+    height: 18.063rem;
+    width: 31.875rem;
+}
+
+.arr {
+    color: rgb(255, 202, 30);
+}
+
+.bizType {
+    position: absolute;
+    top: 170rem;
+    left: 2.5rem;
+}
+
+.bizType h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.625rem;
+}
+
+.bizType h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2.188rem;
+}
+
+.bizType p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.938rem;
+    line-height: 1.875rem;
+}
+
+.enterprise:hover, .smallBiz:hover, .mobileMoney:hover {
+    color: grey;
+}
+
+.bizTypeGallery {
+    position: absolute;
+}
+
+.enterprise1 img {
+    position: absolute;
+    top: 8.75rem;
+    left: 40.625rem;
+    height: 17.313rem;
+    width: 38.313rem;
+}
+
+.enterprise2 img {
+    position: absolute;
+    left: 40.625rem;
+    top: 27.5rem;
+}
+
+.enterprise3 img {
+    position: absolute;
+    left: 57.5rem;
+    top: 27.5rem;
+    width: 21.375rem;
+    height: 18.688rem;
+}
+
+.options {
+    position: relative;
+    top: 218.75rem;
+    background-color: rgb(19, 18, 18);
+    height: 30.625rem;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.options h2 {
+    position: absolute;
+    top: 3.125rem;
+    left: 25.625rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.188rem;
+}
+
+.receiveCards {
+    position: absolute;
+    top: 12.5rem;
+    left: 3.75rem;
+}
+
+.receiveCards h1, .trfToAccount h1, .scanQr h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.188rem;
+    margin-bottom: 1.25rem;
+}
+
+.receiveCards p, .trfToAccount p, .scanQr p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.875rem;
+}
+
+.trfToAccount {
+    position: absolute;
+    top: 12.5rem;
+    left: 31.25rem;
+}
+
+.scanQr {
+    position: absolute;
+    top: 12.5rem;
+    right: 3.75rem;
+}
+
+.icons {
+    background-color: rgb(255, 202, 30);
+    color: black;
+    padding: 0.75rem 0.75rem;
+    border-radius: 3.125rem;
+    border: 0.063rem solid rgb(255, 202, 30);
+    font-size: 1.25rem;
+    margin-bottom: 3.75rem;
+}
+
+.machines {
+    position: relative;
+    top: 225rem;
+    left: 0rem;
+    text-align: center;
+}
+
+.machinesHeader {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 5.625rem;
+}
+
+.nombaMini {
+    position: absolute;
+    left: 0.125rem;
+    background-color: #383838;
+    height: 37.313rem;
+    width: 25.125rem;
+    border-radius: 0.625rem;
+    text-align: left;
+}
+
+.nombaMini img, .nombaLite img, .nombaPro img, .nombaMax img {
+    position: absolute;
+    top: 2.5rem;
+    left: 7.875rem;
+}
+
+.nombaMiniTxt {
+    position: absolute;
+    top: 21.875rem;
+    left: 1.563rem;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 0.875rem; */
+    color: #ece9e9;
+}
+
+.nombaMiniTxt h3, .nombaLiteTxt h3, .nombaMaxTxt h3 {
+    font-size: 1.438rem;
+    margin-bottom: 1.875rem;
+}
+
+.nombaMiniTxt p {
+    font-size: 0.813rem;
+    line-height: 1.813rem;
+}
+
+.nombaMiniTxt h6, .nombaLiteTxt h6 {
+    font-size: 0.75;
+    margin-top: 5rem;
+    margin-bottom: 0.75rem;
+}
+
+.icons2 {
+    position: absolute;
+    top: 0.25rem;
+    font-size: 0.75rem;
+    margin-left: 1.875rem;
+    /* padding: 2.813rem; */
+    /* border: 0.063rem solid white; */
+}
+
+.visa, .mastercard, .wifi, .usb {
+    margin-left: 0.938rem;
+}
+
+.wifi {
+    margin-right: 0.938rem;
+}
+
+.nombaMiniTxt h6, .nombaLiteTxt h6 {
+    margin-top: 2.5rem;
+}
+
+.nombaMiniBuy {
+    position: absolute;
+    top: 11.813rem;
+    left: 16.25rem;
+    width: 5.625rem;
+    /* border: 0.063rem solid white; */
+}
+
+.nombaMiniBuy:hover, .nombaLiteLease:hover, .nombaProBuy:hover, .nombaMaxBuy:hover {
+    margin-left: 0.625rem;
+}
+
+.nombaMiniBuy h3, .nombaLiteLease h3 {
+    font-size: 0.938rem;
+}
+
+.nombaLite {
+    position: absolute;
+    left: 27.375rem;
+    background-color: #EEEEEE;
+    height: 37.313rem;
+    width: 25.125rem;
+    border-radius: 0.625rem;
+    text-align: left;
+}
+
+.nombaLiteTxt {
+    position: absolute;
+    top: 22.5rem;
+    left: 1.563rem;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 0.875rem; */
+    color: rgb(32, 31, 31);
+}
+
+.nombaLiteTxt p {
+    margin-bottom: 4.5rem;
+    font-size: 0.813rem;
+}
+
+.wifi2 {
+    margin-left: 0.938rem;
+}
+
+.iconsLite {
+    position: absolute;
+    top: 0.25rem;
+    font-size: 1rem;
+    margin-left: 6.563rem;
+    width: 9.375rem;
+    /* border: 0.063rem solid; */
+}
+
+.nombaLiteLease {
+    position: absolute;
+    top: 11.125rem;
+    left: 15.625rem;
+    width: 9.375rem;
+    /* border: 0.063rem solid white; */
+}
+
+.nombaPro {
+    position: absolute;
+    left: 54.625rem;
+    background-color: #EEEEEE;
+    height: 37.313rem;
+    width: 25.125;
+    border-radius: 0.625rem;
+    text-align: left;
+}
+
+.nombaProTxt {
+    position: absolute;
+    top: 21.875rem;
+    left: 1.563rem;
+    width: 25rem;
+    /* border: 0.063rem solid black; */
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 0.875rem; */
+    color: rgb(32, 31, 31);
+}
+
+.nombaProTxt p {
+    font-size: 0.813rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.813rem;
+    width: 25rem;
+    margin-bottom: 1.438rem;
+    /* border: 0.063rem solid black; */
+}
+
+.nombaProTxt h6, .nombaMaxTxt h6 {
+    margin-bottom: 0.625rem;
+}
+
+.nombaProBuy {
+    position: absolute;
+    left: 15.938rem;
+    top: 11.75rem;
+    width: 11.875rem;
+    /* border: 0.063rem solid black; */
+}
+
+.nombaProBuy h4, .nombaMaxBuy h4 {
+    font-size: 0.938rem;
+}
+
+.nombaProTxt h3 {
+    font-size: 1.438rem;
+    margin-bottom: 1.875rem;
+}
+
+.iconsPro {
+    /* border: 0.063rem solid black; */
+    position: absolute;
+    top: 0.25rem;
+    font-size: 0.813rem;
+    margin-left: 0.813rem;
+    width: 13.125rem;
+}
+
+.nombaMax {
+    position: absolute;
+    left: 81.813rem;
+    background-color: #EEEEEE;
+    height: 37.313rem;
+    width: 25.125rem;
+    border-radius: 0.625rem;
+    text-align: left;
+}
+
+.nombaMaxTxt {
+    position: absolute;
+    top: 21.875rem;
+    left: 1.563rem;
+    width: 25rem;
+    /* border: 0.063rem solid black; */
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 0.875rem */
+    color: rgb(32, 31, 31);
+}
+
+.nombaMaxTxt P {
+    font-size: 0.813rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.813rem;
+    width: 25rem;
+    margin-bottom: 1.438rem;
+    /* border: 0.063rem solid black; */
+}
+
+.nombaMaxBuy {
+    position: absolute;
+    left: 15.938rem;
+    top: 11.75rem;
+    width: 11.875rem;
+    /* border: 0.063rem solid black; */
+}
+
+.iconsMax {
+    position: absolute;
+    top: 0.25rem;
+    font-size: 0.813rem;
+    margin-left: 0.813rem;
+    width: 13.125rem;
+}
+
+.print {
+    margin-right: 0.938rem;
+}
+ .tipsUpdates {
+    position: absolute;
+    background: url("/images/Screenshot\ 2024-02-28\ at\ 18-02-58\ Get\ Better\ at\ Business\ with\ Nomba.png")no-repeat center center/cover;
+    height: 37.5rem;
+    width: 104%;
+    top: 312.5rem;
+}
+
+.footer {
+    position: relative;
+    background-color: rgb(18,18,18);
+    height: 71.75rem;
+    width: 100%;
+    top: 308rem;
+}
+
+.freeNomba {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.813rem;
+    color: white;
+    text-align: center;
+    margin-top: 5.625rem;
+    margin-bottom: 0.938rem;
+}
+
+.nombaYellow {
+    color: rgb(255, 204, 0);
+}
+
+.footer h2 {
+    color: white;
+    font-family: arial;
+    font-size: 1.313rem;
+    text-align: center;
+}
+
+.googlePlay img, .appStore img {
+    height: 4.375rem;
+} 
+
+.googlePlay {
+    position: absolute;
+    left: 29.688rem;
+}
+
+.appStore {
+    position: absolute;
+    left: 42.188rem;
+}
+
+.category1Head, .category2Head, .category3Head, .category4Head, .category5Head{
+    color: #7E7E7E;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.813rem;
+    margin-bottom: 0.313rem;
+}
+
+.category1 {
+    position: absolute;
+    color: white;
+    height: 31.25rem;
+    width: 100%;
+    top: 23.813rem;
+    left: 2.5rem;
+}
+
+.category1 ul, .category2 ul, .category3 ul, .category4 ul, .category5 ul {
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.938rem;
+}
+
+.category1 ul li a, .category2 ul a,.category3 ul a, .category4 ul a, .category5 ul a {
+    color: white;
+    line-height: 2.188rem;
+    text-decoration: none;
+}
+
+.category2 {
+    position: absolute;
+    color: white;
+    height: 31.25rem;
+    width: 100%;
+    top: 23.813rem;
+    left: 22.5rem;
+}
+
+.category3 {
+    position: absolute;
+    color: white;
+    height: 31.25rem;
+    width: 100%;
+    top: 23.813rem;
+    left: 43.125rem;
+}
+
+.category4 {
+    position: absolute;
+    color: white;
+    height: 31.25rem;
+    width: 100%;
+    top: 23.813rem;
+    left: 62.5rem;
+}
+
+.category5 {
+    position: absolute;
+    color: white;
+    height: 31.25rem;
+    width: 100%;
+    top: 39.375rem;
+    left: 2.5rem;
+}
+
+.category6 {
+    position: absolute;
+    top: 51.563rem;
+    left: 2.5rem;
+}
+
+.privPol {
+    font-family: arial;
+    position: absolute;
+    top: 56.25rem;
+    left: 2.5rem;
+}
+
+.privPol a, .termsServ a, .ims a {
+    text-decoration: none;
+    color: white;
+}
+
+.termsServ {
+    position: absolute;
+    top: 56.25rem;
+    color: white;
+    left: 10.625rem;
+    font-family: arial;
+}
+
+.ims {
+    position: absolute;
+    top: 56.25rem;
+    color: white;
+    left: 20rem;
+    font-family: arial;
+}
+
+.nombaLicensed {
+    position: absolute;
+    top: 56.25rem;
+    color: white;
+    left: 62.5rem;
+    text-align: right;
+    font-family: arial;
+}
+
+.nombaLicensed h5 {
+    margin-bottom: 0.625rem;
+    font-size: 1rem;
+}
+
+.hr h3{
+    position: absolute;
+    top: 60.625rem;
+    left: 2.625rem;
+    color: rgb(197, 181, 181);
+}
+
+.addNg {
+    position: absolute;
+    top: 63.125rem;
+    left: 2.625rem;
+    color: white;
+    font-family: arial;
+    font-size: 0.813rem;
+    line-height: 1.875rem;
+}
+
+.addUs {
+    position: absolute;
+    top: 63.125rem;
+    left: 26.188rem;
+    color: white;
+    line-height: 1.875rem;
+}
+
+.copy {
+    position: absolute;
+    top: 63.125rem;
+    right: 2.188rem;
+}
+
+.copy h3 {
+    font-family: arial;
+    color: white;
+    font-size: 0.813rem;
+    /* font-weight: ; */
+}
